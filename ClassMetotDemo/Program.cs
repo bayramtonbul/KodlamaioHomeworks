@@ -40,11 +40,11 @@ namespace ClassMetotDemo
 
 
             Console.WriteLine("------Ekleme------");
-            MusteriManager musterimanager = new MusteriManager();
-            musterimanager.Ekle(musteri1);
-            musterimanager.Ekle(musteri2);
-            musterimanager.Ekle(musteri3);
-            musterimanager.Ekle(musteri4);
+            MusteriManager musteriManager = new MusteriManager();
+            musteriManager.Ekle(musteri1);
+            musteriManager.Ekle(musteri2);
+            musteriManager.Ekle(musteri3);
+            musteriManager.Ekle(musteri4);
 
             Console.WriteLine("------Listeleme------");
 
@@ -57,10 +57,10 @@ namespace ClassMetotDemo
 
             Console.WriteLine("------Silme------");
 
-            musterimanager.Silme(musteri1);
-            musterimanager.Silme(musteri2);
-            musterimanager.Silme(musteri3);
-            musterimanager.Silme(musteri4);
+            musteriManager.Silme(musteri1);
+            musteriManager.Silme(musteri2);
+            musteriManager.Silme(musteri3);
+            musteriManager.Silme(musteri4);
 
 
 
