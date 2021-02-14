@@ -12,22 +12,39 @@ namespace Generics
 
             List<string> sehirler = new List<string>();
             sehirler.Add("Ankara");
-            sehirler.Add("Ankara");
-            sehirler.Add("Ankara");
-            sehirler.Add("Ankara");
-            sehirler.Add("Ankara");
+            sehirler.Add("izmir");
+            sehirler.Add("Adana");
+            sehirler.Add("istanbul");
+            sehirler.Add("Bursa");
             Console.WriteLine(sehirler.Count);
 
-            
+            foreach (var sehir in sehirler)
+            {
+                Console.WriteLine(sehir);
 
+            }
+
+            Console.WriteLine("sehirler[4] : "+sehirler[4]);
+
+
+
+            Console.WriteLine("-----MyList-----");
 
             MyList<string> sehirler2 = new MyList<string>();
             sehirler2.Add("Ankara");
-            sehirler2.Add("Ankara");
-            sehirler2.Add("Ankara");
-            sehirler2.Add("Ankara");
-            sehirler2.Add("Ankara");
+            sehirler2.Add("İzmir");
+            sehirler2.Add("Adana");
+            sehirler2.Add("İstanbul");
+            sehirler2.Add("Bursa");
             Console.WriteLine(sehirler2.Count);
+
+            foreach (var sehir in sehirler2.List)
+            {
+                Console.WriteLine(sehir);
+
+            }
+
+            Console.WriteLine("sehirler2[4] : " + sehirler2.List[4]);
 
 
         }
@@ -63,6 +80,15 @@ namespace Generics
         {
             get { return _array.Length; }
         }
+
+
+
+        public T[] List
+        {
+            get { return _array; }
+
+        }
+
 
 
 
