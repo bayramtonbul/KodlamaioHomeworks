@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AbstractClass
+namespace DemoAbstractClass
 {
     //5.gunOdev3
     class Program
