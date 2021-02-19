@@ -6,10 +6,11 @@ using System.Text;
 
 namespace GameDemo.Concrete
 {
-    public class CustomerCheckManager : ICustomerCheckService
+    public class EStateCustomerCheckManager : ICustomerCheckService
     {
         public bool Check(Customer customer)
         {
+            Console.WriteLine(customer.FirstName+" checked");
             return true;
         }
     }

@@ -32,7 +32,7 @@ namespace GameDemo
                 YearOfBirth = new DateTime(1999, 9, 9)
             };
 
-            CustomerManager customerManager = new CustomerManager();
+            CustomerManager customerManager = new CustomerManager(new EStateCustomerCheckManager());
             customerManager.Add(customer1);
             customerManager.Update(customer2);
             customerManager.Delete(customer1);
@@ -69,19 +69,6 @@ namespace GameDemo
             MobileSaleManager mobileSaleManager = new MobileSaleManager();
             mobileSaleManager.SalesCampaign(customer2, campaign1);
             mobileSaleManager.Sale(customer1);
-
-            
-
-
-
-
-
-
-
-
-
-
-
 
 
             Console.ReadLine();

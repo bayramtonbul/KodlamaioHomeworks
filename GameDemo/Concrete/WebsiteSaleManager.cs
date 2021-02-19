@@ -9,12 +9,12 @@ namespace GameDemo.Abstract
     {
         public void Sale(Customer customer)
         {
-            Console.WriteLine(customer.FirstName+" bought the game on the website ");
+            Console.WriteLine(customer.FirstName+" bought the game from the website ");
         }
 
         public void SalesCampaign(Customer customer,Campaign campaign)
         {
-            Console.WriteLine(customer.FirstName + " bought the game  on the website with "+campaign.CampaignName);
+            Console.WriteLine(customer.FirstName + " bought the game from the website with "+campaign.CampaignName);
         }
     }
 }

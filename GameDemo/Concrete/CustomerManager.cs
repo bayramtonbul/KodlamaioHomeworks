@@ -6,9 +6,24 @@ namespace GameDemo.Abstract
 {
     public class CustomerManager : ICustomerService 
     {
+        ICustomerCheckService _customerCheckService;
+
+        public CustomerManager(ICustomerCheckService customerCheckService)
+        {
+            _customerCheckService = customerCheckService;
+        }
+
         public void Add(Customer customer)
         {
-            Console.WriteLine("Customer Added : "+customer.FirstName);
+            if (_customerCheckService.Check(customer))
+            {
+                Console.WriteLine("Customer Added : " + customer.FirstName);
+            }
+            else
+            {
+                Console.WriteLine("kayıt basarisiz");
+            }
+            
         }
 
         public void Delete(Customer customer)
